@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour {
+public class PlayerManager : MonoBehaviour
+{
     #region Self Variables
 
     #region Serialized Variables
@@ -12,27 +13,33 @@ public class PlayerManager : MonoBehaviour {
 
     #endregion
 
-    private void Start() {
+    private void Start()
+    {
         SubscribeEvents();
     }
 
-    private void SubscribeEvents() {
+    private void SubscribeEvents()
+    {
         EventManager.Instance.onInputDragged += OnInputDragged;
         EventManager.Instance.onInputReleased += OnInputReleased;
     }
-    private void UnSubscribeEvents() {
+    private void UnSubscribeEvents()
+    {
         EventManager.Instance.onInputDragged -= OnInputDragged;
         EventManager.Instance.onInputReleased -= OnInputReleased;
     }
-    private void OnDisable() {
+    private void OnDisable()
+    {
         UnSubscribeEvents();
     }
-    private void OnInputDragged(Vector2 inputValues) {
+    private void OnInputDragged(HorizontalnputParams inputValues)
+    {
         movementController.UpdateInputData(inputValues);
         movementController.ActivateMovement();
     }
 
-    private void OnInputReleased() {
+    private void OnInputReleased()
+    {
         movementController.DeactivateMovement();
     }
 }

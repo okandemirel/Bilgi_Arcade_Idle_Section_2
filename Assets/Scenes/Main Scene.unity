@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 108754427}
-  m_IndirectSpecularColor: {r: 0.2036866, g: 0.5761311, b: 0.9134495, a: 1}
+  m_IndirectSpecularColor: {r: 0.17899509, g: 0.54944223, b: 0.9359251, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -541,6 +541,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b56e371283e63f489bdd7ded2113caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputData: {fileID: 0}
+  IsAvailableForTouch: 0
+  isFirstTimeTouchTaken: 0
+  joystick: {fileID: 0}
 --- !u!1001 &1077019509
 PrefabInstance:
   m_ObjectHideFlags: 0

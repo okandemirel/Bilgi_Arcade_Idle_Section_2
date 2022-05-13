@@ -24,7 +24,7 @@ public class PlayerMovementController : MonoBehaviour
     private bool _isReadyToMove;
 
 
-    private Vector2 _inputValues;
+    private float _inputValues;
 
     #endregion
 
@@ -35,29 +35,6 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (_isReadyToMove)
         {
-
-            //Debug.LogWarning(Types);
-
-            //switch (Types)
-            //{
-
-            //    case MovementTypes.Velocity:
-            //        {
-            //            MovePlayerVelocity();
-            //            break;
-            //        }
-            //    case MovementTypes.AddForce:
-            //        {
-            //            MovePlayerAddForce();
-            //            break;
-            //        }
-            //    case MovementTypes.Transform:
-            //        {
-            //            MovePlayerWithTransform();
-            //            break;
-            //        }
-            //}
-
             MovePlayerVelocity();
         }
         else
@@ -66,9 +43,9 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    public void UpdateInputData(Vector2 inputValues)
+    public void UpdateInputData(HorizontalnputParams inputValues)
     {
-        _inputValues = inputValues;
+        _inputValues = inputValues.HorizontalInputValue;
     }
 
     public void ActivateMovement()
@@ -83,19 +60,8 @@ public class PlayerMovementController : MonoBehaviour
 
     private void MovePlayerVelocity()
     {
-        rigidbody.velocity = new Vector3(_inputValues.x * speed, rigidbody.velocity.y, _inputValues.y * speed);
+        rigidbody.velocity = new Vector3(_inputValues * speed, rigidbody.velocity.y, _inputValues * speed);
     }
-
-    private void MovePlayerAddForce()
-    {
-        rigidbody.AddForce(new Vector3(_inputValues.x * speed, rigidbody.velocity.y, _inputValues.y * speed), ForceMode.Force);
-    }
-
-    private void MovePlayerWithTransform()
-    {
-        transform.position += new Vector3(_inputValues.x * speed, 0, _inputValues.y * speed);
-    }
-
     private void StopPlayer()
     {
         rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, 0);
