@@ -21,7 +21,7 @@ public class EventManager : MonoBehaviour
 
     #endregion
 
-    public UnityAction<HorizontalnputParams> onInputDragged = delegate { };
+    public UnityAction<JoystickInputParams> onInputDragged = delegate { };
     public UnityAction onInputReleased = delegate { };
     public UnityAction onInputTaken = delegate { };
     public UnityEvent onClick;

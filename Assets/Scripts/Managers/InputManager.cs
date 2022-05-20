@@ -50,14 +50,14 @@ namespace UnityTemplateProjects.Managers
         {
             if (!IsAvailableForTouch) return;
 
-            if (Input.GetMouseButtonUp(0) && !IsPointerOverUIElement())
+            if (Input.GetMouseButtonUp(0))
             {
                 _isTouching = false;
 
                 EventManager.Instance.onInputReleased?.Invoke();
             }
 
-            if (Input.GetMouseButtonDown(0) && !IsPointerOverUIElement())
+            if (Input.GetMouseButtonDown(0))
             {
                 _isTouching = true;
                 EventManager.Instance.onInputTaken?.Invoke();
@@ -70,28 +70,36 @@ namespace UnityTemplateProjects.Managers
                 _mousePosition = Input.mousePosition;
             }
 
-            if (Input.GetMouseButton(0) && !IsPointerOverUIElement())
+            if (Input.GetMouseButton(0))
             {
                 if (_isTouching)
                 {
                     if (_mousePosition != null)
                     {
-                        Vector2 mouseDeltaPos = (Vector2)Input.mousePosition - _mousePosition.Value;
+                        //Vector2 mouseDeltaPos = (Vector2)Input.mousePosition - _mousePosition.Value;
 
 
-                        if (mouseDeltaPos.x > InputData.Data.HorizontalInputSpeed)
-                            _moveVector.x = InputData.Data.HorizontalInputSpeed / 10f * mouseDeltaPos.x;
-                        else if (mouseDeltaPos.x < -InputData.Data.HorizontalInputSpeed)
-                            _moveVector.x = -InputData.Data.HorizontalInputSpeed / 10f * -mouseDeltaPos.x;
-                        else
-                            _moveVector.x = Mathf.SmoothDamp(_moveVector.x, 0f, ref _currentVelocity,
-                                InputData.Data.HorizontalInputClampStopValue);
+                        //if (mouseDeltaPos.x > InputData.Data.HorizontalInputSpeed)
+                        //    _moveVector.x = InputData.Data.HorizontalInputSpeed / 10f * mouseDeltaPos.x;
+                        //else if (mouseDeltaPos.x < -InputData.Data.HorizontalInputSpeed)
+                        //    _moveVector.x = -InputData.Data.HorizontalInputSpeed / 10f * -mouseDeltaPos.x;
+                        //else
+                        //    _moveVector.x = Mathf.SmoothDamp(_moveVector.x, 0f, ref _currentVelocity,
+                        //        InputData.Data.HorizontalInputClampStopValue);
 
-                        _mousePosition = Input.mousePosition;
+                        //_mousePosition = Input.mousePosition;
 
-                        EventManager.Instance.onInputDragged?.Invoke(new HorizontalnputParams()
+                        //EventManager.Instance.onInputDragged?.Invoke(new HorizontalnputParams()
+                        //{
+                        //    HorizontalInputValue = _moveVector.x,
+                        //    HorizontalInputClampNegativeSide = InputData.Data.HorizontalInputClampNegativeSide,
+                        //    HorizontalInputClampPositiveSide = InputData.Data.HorizontalInputClampPositiveSide
+                        //});
+
+                        EventManager.Instance.onInputDragged?.Invoke(new JoystickInputParams()
                         {
-                            HorizontalInputValue = _moveVector.x,
+                            HorizontalInputValue = joystick.Horizontal,
+                            VerticalInputValue = joystick.Vertical,
                             HorizontalInputClampNegativeSide = InputData.Data.HorizontalInputClampNegativeSide,
                             HorizontalInputClampPositiveSide = InputData.Data.HorizontalInputClampPositiveSide
                         });

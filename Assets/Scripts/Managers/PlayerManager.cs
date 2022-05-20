@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] private PlayerMovementController movementController;
     [SerializeField] private PlayerPhysicsController physicsController;
+    [SerializeField] private PlayerAnimationController animationController;
 
     #endregion
 
@@ -20,11 +21,13 @@ public class PlayerManager : MonoBehaviour
 
     private void SubscribeEvents()
     {
+        EventManager.Instance.onInputTaken += OnInputTaken;
         EventManager.Instance.onInputDragged += OnInputDragged;
         EventManager.Instance.onInputReleased += OnInputReleased;
     }
     private void UnSubscribeEvents()
     {
+        EventManager.Instance.onInputTaken -= OnInputTaken;
         EventManager.Instance.onInputDragged -= OnInputDragged;
         EventManager.Instance.onInputReleased -= OnInputReleased;
     }
@@ -32,7 +35,12 @@ public class PlayerManager : MonoBehaviour
     {
         UnSubscribeEvents();
     }
-    private void OnInputDragged(HorizontalnputParams inputValues)
+
+    private void OnInputTaken()
+    {
+        animationController.SetAnimationStateToWalk();
+    }
+    private void OnInputDragged(JoystickInputParams inputValues)
     {
         movementController.UpdateInputData(inputValues);
         movementController.ActivateMovement();
@@ -41,5 +49,6 @@ public class PlayerManager : MonoBehaviour
     private void OnInputReleased()
     {
         movementController.DeactivateMovement();
+        animationController.SetAnimationStateToIdle();
     }
 }
