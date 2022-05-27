@@ -28,4 +28,9 @@ public class EventManager : MonoBehaviour
 
     public UnityAction onReset = delegate { };
     public UnityAction onPlay = delegate { };
+
+    public UnityAction<int> onLevelInitialize = delegate { };
+    public UnityAction onClearActiveLevel = delegate { };
+    public UnityAction onNextLevel = delegate { };
+    public UnityAction onRestartLevel = delegate { };
 }

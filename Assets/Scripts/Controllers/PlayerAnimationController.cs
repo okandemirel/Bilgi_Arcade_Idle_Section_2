@@ -1,3 +1,4 @@
+using Assets.Scripts.Enums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ public class PlayerAnimationController : MonoBehaviour
 
     private const string Idle = "Idle";
     private const string Walk = "Walk";
+    private const string Cut = "Cut";
 
 
     #endregion
@@ -33,5 +35,29 @@ public class PlayerAnimationController : MonoBehaviour
     public void SetAnimationStateToWalk()
     {
         animator.SetTrigger(Walk);
+    }
+
+    public void ChangeAnimationState(AnimationStates state)
+    {
+        switch (state)
+        {
+            case AnimationStates.Idle:
+                {
+                    animator.SetBool(Cut, false);
+                    animator.SetTrigger(Idle);
+                    break;
+                }
+            case AnimationStates.Cut:
+                {
+                    animator.SetBool(Cut, true);
+                    break;
+                }
+            case AnimationStates.Walk:
+                {
+                    animator.SetBool(Cut, false);
+                    animator.SetTrigger(Walk);
+                    break;
+                }
+        }
     }
 }

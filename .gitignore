@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/unity,visualstudio,visualstudiocode,rider,csharp
-# Edit at https://www.toptal.com/developers/gitignore?templates=unity,visualstudio,visualstudiocode,rider,csharp
+# Created by https://www.toptal.com/developers/gitignore/api/unity,rider,visualstudio,visualstudiocode,csharp
+# Edit at https://www.toptal.com/developers/gitignore?templates=unity,rider,visualstudio,visualstudiocode,csharp
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -14,6 +14,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.a
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -36,6 +37,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+[Aa]ssets/[Rr]ayfire/[Pp]lugins
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -738,4 +740,4 @@ sysinfo.txt
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/unity,visualstudio,visualstudiocode,rider,csharp
+# End of https://www.toptal.com/developers/gitignore/api/unity,rider,visualstudio,visualstudiocode,csharp

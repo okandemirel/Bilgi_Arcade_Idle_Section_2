@@ -22,7 +22,6 @@ public class CameraManager : MonoBehaviour
     {
         SubscribeEvents();
 
-        playerManager = FindObjectOfType<PlayerManager>().transform;
     }
 
     private void SubscribeEvents()
@@ -44,6 +43,8 @@ public class CameraManager : MonoBehaviour
 
     private void SetCameraTarget()
     {
+        playerManager = FindObjectOfType<PlayerManager>().transform;
+
         virtualCamera.Follow = playerManager;
         virtualCamera.LookAt = playerManager;
     }
