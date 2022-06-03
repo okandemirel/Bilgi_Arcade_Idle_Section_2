@@ -1,4 +1,7 @@
+using Assets.Scripts.Enums;
+using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
@@ -8,6 +11,7 @@ public class UIManager : MonoBehaviour
     #region Serialized Variables
 
     [SerializeField] private GameObject startPanel, winPanel, failPanel, joystickPanel;
+    [SerializeField] private TextMeshProUGUI woodText, stoneText, goldText;
 
     #endregion
 
@@ -25,12 +29,14 @@ public class UIManager : MonoBehaviour
     {
         EventManager.Instance.onPlay += OnOpenJoystickPanel;
         EventManager.Instance.onPlay += OnCloseStartPanel;
+        EventManager.Instance.onUpdateUIInGameEconomy += OnUpdateUIInGameEconomy;
     }
 
     private void UnsubscribeEvents()
     {
         EventManager.Instance.onPlay -= OnOpenJoystickPanel;
         EventManager.Instance.onPlay -= OnCloseStartPanel;
+        EventManager.Instance.onUpdateUIInGameEconomy -= OnUpdateUIInGameEconomy;
     }
 
     private void OnDisable()
@@ -54,5 +60,27 @@ public class UIManager : MonoBehaviour
     public void Play()
     {
         EventManager.Instance.onPlay?.Invoke();
+    }
+
+    private void OnUpdateUIInGameEconomy(CollectableTypes type, int value)
+    {
+        switch (type)
+        {
+            case CollectableTypes.Wood:
+                {
+                    woodText.DOText(value.ToString(), .75f, true, ScrambleMode.Numerals);
+                    break;
+                }
+            case CollectableTypes.Stone:
+                {
+                    stoneText.DOText(value.ToString(), .75f, true, ScrambleMode.Numerals);
+                    break;
+                }
+            case CollectableTypes.Gold:
+                {
+                    goldText.DOText(value.ToString(), .75f, true, ScrambleMode.Numerals);
+                    break;
+                }
+        }
     }
 }

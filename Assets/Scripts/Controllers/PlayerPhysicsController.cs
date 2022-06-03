@@ -1,4 +1,5 @@
 using Assets.Scripts.Enums;
+using Assets.Scripts.Managers;
 using DG.Tweening;
 //using RayFire;
 using Sirenix.OdinInspector;
@@ -42,21 +43,28 @@ public class PlayerPhysicsController : MonoBehaviour
     {
         if (other.CompareTag("Cuttable"))
         {
-            //if (!_isInCuttingState)
-            //{
-            //    _isInCuttingState = true;
-            //    DOVirtual.DelayedCall(3, () =>
-            //    {
-            //        manager.CutCuttable(other.transform.GetChild(0).transform.GetComponent<RayfireRigid>());
-            //    }).OnComplete(() => _isInCuttingState = false);
-            //}
+            if (!_isInCuttingState)
+            {
+                _isInCuttingState = true;
+                DOVirtual.DelayedCall(3, () =>
+                {
+                    UpdateEconomy(other);
+                    //manager.CutCuttable(other.transform.GetChild(0).transform.GetComponent<RayfireRigid>());
+                }).OnComplete(() => _isInCuttingState = false);
+            }
         }
+    }
+
+    private void UpdateEconomy(Collider other)
+    {
+        manager.UpdateInGameEconomy(other.GetComponent<CollectableManager>().Type, 3);
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Cuttable"))
         {
+            manager.DisableCuttingAnimation();
             manager.ChangeAnimationState(AnimationStates.Idle);
         }
     }

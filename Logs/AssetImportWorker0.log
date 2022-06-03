@@ -15,11 +15,11 @@ D:/Okan/Bilgi_Arcade_Idle_Section_2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54508
+53489
 Successfully changed project path to: D:/Okan/Bilgi_Arcade_Idle_Section_2
 D:/Okan/Bilgi_Arcade_Idle_Section_2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 283.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 369.81 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.20f1 (41c4e627c95f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -37,93 +37,91 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001906 seconds.
+Registered in 0.001902 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 535.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 295.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.693 seconds
+- Completed reload, in  1.402 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1693ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (1402ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (972ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (699ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (167ms)
+			SetupTypeCache (155ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (695ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (408ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (536ms)
-				BeforeProcessingInitializeOnLoad (24ms)
-				ProcessInitializeOnLoadAttributes (102ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				RefreshPlugins (296ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009213 seconds.
+Registered in 0.009994 seconds.
 Begin MonoManager ReloadAssembly
-Error: Could not load signature of RayFire.RFFragment:Compute due to: Could not load file or assembly 'RFLib_DotNet_2018, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:RFLib_DotNet_2018, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-Unloading broken assembly Library/ScriptAssemblies/Assembly-CSharp.dll, this assembly can cause crashes in the runtime
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 640.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 295.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  8.495 seconds
+- Completed reload, in  2.138 seconds
 Domain Reload Profiling:
-	ReloadAssembly (8496ms)
-		BeginReloadAssembly (1208ms)
+	ReloadAssembly (2139ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (208ms)
-		EndReloadAssembly (7006ms)
-			LoadAssemblies (848ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1938ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (3006ms)
+			SetupTypeCache (328ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (243ms)
-			SetupLoadedEditorAssemblies (2474ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1320ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (640ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (1122ms)
-				ProcessInitializeOnLoadMethodAttributes (594ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (296ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (725ms)
+				ProcessInitializeOnLoadMethodAttributes (203ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
 Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 4.20 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3190 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 221.5 MB.
-System memory in use after: 221.5 MB.
+Unloading 3380 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 204.9 MB.
+System memory in use after: 205.0 MB.
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3675.
-Total: 36.920900 ms (FindLiveObjects: 0.705400 ms CreateObjectMapping: 0.299100 ms MarkObjects: 35.609200 ms  DeleteObjects: 0.304900 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3872.
+Total: 25.444600 ms (FindLiveObjects: 0.342500 ms CreateObjectMapping: 0.202800 ms MarkObjects: 24.668800 ms  DeleteObjects: 0.229400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,52 +134,24 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  path: Assets/GUI PRO Kit - Sci-Fi Survival/ResourcesData/Sprite/Demo/Demo_ItemIcon/Icon_ItemIcon_Middle_Wood.png
+  artifactKey: Guid(3fa488b1e7f7c43c785d4f2fa0446019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI PRO Kit - Sci-Fi Survival/ResourcesData/Sprite/Demo/Demo_ItemIcon/Icon_ItemIcon_Middle_Wood.png using Guid(3fa488b1e7f7c43c785d4f2fa0446019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f709432051828faff2f02553d9ec593') in 0.130261 seconds 
+  Import took 0.139445 seconds .
+
+========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011051 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.108 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2109ms)
-		BeginReloadAssembly (164ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1872ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (429ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (1125ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (661ms)
-				ProcessInitializeOnLoadMethodAttributes (353ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
 Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
 Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 2.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 218.1 MB.
-System memory in use after: 218.2 MB.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.4 MB.
+System memory in use after: 128.5 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3677.
-Total: 27.437400 ms (FindLiveObjects: 0.296600 ms CreateObjectMapping: 0.147500 ms MarkObjects: 26.763400 ms  DeleteObjects: 0.228300 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3878.
+Total: 25.486400 ms (FindLiveObjects: 0.340300 ms CreateObjectMapping: 0.138900 ms MarkObjects: 24.812300 ms  DeleteObjects: 0.193800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -196,50 +166,50 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.012544 seconds.
+Registered in 0.009744 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 4.81 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.554 seconds
+- Completed reload, in  1.799 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2555ms)
-		BeginReloadAssembly (178ms)
+	ReloadAssembly (1799ms)
+		BeginReloadAssembly (131ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (2294ms)
-			LoadAssemblies (141ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1602ms)
+			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (499ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (1441ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (981ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (5ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (909ms)
-				ProcessInitializeOnLoadMethodAttributes (391ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (694ms)
+				ProcessInitializeOnLoadMethodAttributes (190ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
 Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 3.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 218.1 MB.
-System memory in use after: 218.2 MB.
+Unloading 3169 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 190.4 MB.
+System memory in use after: 190.5 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3679.
-Total: 31.944900 ms (FindLiveObjects: 0.715100 ms CreateObjectMapping: 0.217500 ms MarkObjects: 30.711900 ms  DeleteObjects: 0.297500 ms)
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3880.
+Total: 24.285600 ms (FindLiveObjects: 0.329200 ms CreateObjectMapping: 0.172100 ms MarkObjects: 23.595100 ms  DeleteObjects: 0.187600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -252,249 +222,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  path: Assets/TempAsssets/StylizedWater2
-  artifactKey: Guid(0b30d9ea2aa7e4a1ea391e2efe9a89c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TempAsssets/StylizedWater2 using Guid(0b30d9ea2aa7e4a1ea391e2efe9a89c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f97fc292a15e52418c80902aab74ebb') in 0.009190 seconds 
-  Import took 0.025363 seconds .
-
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009140 seconds.
+Registered in 0.010724 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.977 seconds
+- Completed reload, in  1.761 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1977ms)
-		BeginReloadAssembly (126ms)
+	ReloadAssembly (1762ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (1791ms)
-			LoadAssemblies (92ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1568ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (341ms)
+			SetupTypeCache (368ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1192ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (939ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (627ms)
-				ProcessInitializeOnLoadMethodAttributes (467ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (638ms)
+				ProcessInitializeOnLoadMethodAttributes (197ms)
 				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
-Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 2.90 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 218.1 MB.
-System memory in use after: 218.2 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3681.
-Total: 27.086900 ms (FindLiveObjects: 0.319700 ms CreateObjectMapping: 0.123100 ms MarkObjects: 26.415900 ms  DeleteObjects: 0.226900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008879 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.02 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.886 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1886ms)
-		BeginReloadAssembly (134ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1693ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (333ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1104ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (643ms)
-				ProcessInitializeOnLoadMethodAttributes (359ms)
-				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
 Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 2.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 218.2 MB.
-System memory in use after: 218.2 MB.
+Unloading 3169 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 190.5 MB.
+System memory in use after: 190.6 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3683.
-Total: 24.377500 ms (FindLiveObjects: 0.485100 ms CreateObjectMapping: 0.314200 ms MarkObjects: 23.338600 ms  DeleteObjects: 0.238300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 64.170647 seconds.
-  path: Assets/Resources/Prefabs/LevelPrefabs/level 0.prefab
-  artifactKey: Guid(caf2548259ccaad4bb8fb20b6f11005b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/LevelPrefabs/level 0.prefab using Guid(caf2548259ccaad4bb8fb20b6f11005b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f2234be6730aef5649171183f9c94d') in 0.839163 seconds 
-  Import took 0.904648 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008742 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.031 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2031ms)
-		BeginReloadAssembly (179ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1793ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (372ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (1129ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (651ms)
-				ProcessInitializeOnLoadMethodAttributes (373ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
-Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 4.17 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 247.9 MB.
-System memory in use after: 248.0 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3732.
-Total: 26.049300 ms (FindLiveObjects: 0.334000 ms CreateObjectMapping: 0.191800 ms MarkObjects: 25.230700 ms  DeleteObjects: 0.291100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 9.106433 seconds.
-  path: Assets/Resources/Prefabs/LevelPrefabs/level 0.prefab
-  artifactKey: Guid(caf2548259ccaad4bb8fb20b6f11005b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/LevelPrefabs/level 0.prefab using Guid(caf2548259ccaad4bb8fb20b6f11005b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f728251aa0cedea42df732bd55edd9') in 0.692176 seconds 
-  Import took 0.745384 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009268 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 4.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.025 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2026ms)
-		BeginReloadAssembly (162ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (77ms)
-		EndReloadAssembly (1804ms)
-			LoadAssemblies (99ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (333ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (1173ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (5ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (712ms)
-				ProcessInitializeOnLoadMethodAttributes (355ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Shader 'BOXOPHOBIC/Polyverse Skies/Simple': fallback shader 'False' not found
-Shader 'BOXOPHOBIC/Polyverse Skies/Standard': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 2.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2978 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 249.0 MB.
-System memory in use after: 249.1 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 3770.
-Total: 24.150300 ms (FindLiveObjects: 0.311700 ms CreateObjectMapping: 0.193200 ms MarkObjects: 23.413500 ms  DeleteObjects: 0.230400 ms)
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3882.
+Total: 27.322800 ms (FindLiveObjects: 0.302400 ms CreateObjectMapping: 0.305100 ms MarkObjects: 26.510500 ms  DeleteObjects: 0.203200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

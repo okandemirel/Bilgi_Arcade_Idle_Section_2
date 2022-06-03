@@ -27,14 +27,9 @@ public class PlayerAnimationController : MonoBehaviour
 
     #endregion
 
-    public void SetAnimationStateToIdle()
+    public void DisableCuttingAnimation()
     {
-        animator.SetTrigger(Idle);
-    }
-
-    public void SetAnimationStateToWalk()
-    {
-        animator.SetTrigger(Walk);
+        animator.SetBool(Cut, false);
     }
 
     public void ChangeAnimationState(AnimationStates state)
@@ -43,7 +38,6 @@ public class PlayerAnimationController : MonoBehaviour
         {
             case AnimationStates.Idle:
                 {
-                    animator.SetBool(Cut, false);
                     animator.SetTrigger(Idle);
                     break;
                 }
@@ -54,7 +48,6 @@ public class PlayerAnimationController : MonoBehaviour
                 }
             case AnimationStates.Walk:
                 {
-                    animator.SetBool(Cut, false);
                     animator.SetTrigger(Walk);
                     break;
                 }

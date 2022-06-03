@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnInputTaken()
     {
-        animationController.SetAnimationStateToWalk();
+        animationController.ChangeAnimationState(AnimationStates.Walk);
     }
     private void OnInputDragged(JoystickInputParams inputValues)
     {
@@ -53,7 +53,12 @@ public class PlayerManager : MonoBehaviour
     private void OnInputReleased()
     {
         movementController.DeactivateMovement();
-        animationController.SetAnimationStateToIdle();
+        animationController.ChangeAnimationState(AnimationStates.Idle);
+    }
+
+    public void UpdateInGameEconomy(CollectableTypes type, int value)
+    {
+        EventManager.Instance.onUpdateInGameEconomy?.Invoke(type, value);
     }
 
     public void ChangeAnimationState(AnimationStates state)
@@ -65,4 +70,9 @@ public class PlayerManager : MonoBehaviour
     //{
     //    rigid.ApplyDamage(15, new Vector3(rigid.transform.position.x, 0, rigid.transform.position.z), 5);
     //}
+
+    public void DisableCuttingAnimation()
+    {
+        animationController.DisableCuttingAnimation();
+    }
 }
