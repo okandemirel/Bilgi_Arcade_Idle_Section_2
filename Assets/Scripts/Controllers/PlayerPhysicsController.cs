@@ -5,6 +5,7 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
+
 public class PlayerPhysicsController : MonoBehaviour
 {
     #region Self Variables
@@ -36,6 +37,46 @@ public class PlayerPhysicsController : MonoBehaviour
         {
             manager.ChangeAnimationState(AnimationStates.Cut);
         }
+
+        if (other.CompareTag("Buyable"))
+        {
+            var buyableManager = other.GetComponent<BuyableManager>();
+            var data = other.GetComponent<BuyableManager>().BuyableData;
+            var priceresultWood = data.WoodRequirement - InGameEconomyManager._wood;
+            var priceresultStone = data.StoneRequirement - InGameEconomyManager._stone;
+            var priceresultGold = data.GoldRequirement - InGameEconomyManager._gold;
+            if (priceresultWood <= 0 && priceresultStone <= 0 && priceresultGold <= 0 && !data.IsBought)
+            {
+                Debug.LogWarning(priceresultWood);
+                EventManager.Instance.onUpdateInGameEconomy?.Invoke(CollectableTypes.Wood, -(InGameEconomyManager._wood + priceresultWood));
+                EventManager.Instance.onUpdateInGameEconomy?.Invoke(CollectableTypes.Stone, -(InGameEconomyManager._stone + priceresultStone));
+                EventManager.Instance.onUpdateInGameEconomy?.Invoke(CollectableTypes.Gold, -(InGameEconomyManager._gold + priceresultGold));
+                buyableManager.BuyTheObject();
+            }
+            else { }
+
+
+            if (priceresultWood > 0)
+            {
+                data.WoodRequirement -= InGameEconomyManager._wood;
+                EventManager.Instance.onUpdateInGameEconomy?.Invoke(CollectableTypes.Wood, -(InGameEconomyManager._wood + priceresultWood));
+            }
+
+            if (priceresultStone > 0)
+            {
+
+                data.StoneRequirement -= InGameEconomyManager._stone;
+                EventManager.Instance.onUpdateInGameEconomy?.Invoke(CollectableTypes.Stone, -(InGameEconomyManager._stone + priceresultStone));
+            }
+
+            if (priceresultGold > 0)
+            {
+
+                data.GoldRequirement -= InGameEconomyManager._stone;
+                EventManager.Instance.onUpdateInGameEconomy?.Invoke(CollectableTypes.Gold, -(InGameEconomyManager._gold + priceresultGold));
+            }
+
+        }
     }
 
 
@@ -53,6 +94,8 @@ public class PlayerPhysicsController : MonoBehaviour
                 }).OnComplete(() => _isInCuttingState = false);
             }
         }
+
+
     }
 
     private void UpdateEconomy(Collider other)
@@ -68,4 +111,6 @@ public class PlayerPhysicsController : MonoBehaviour
             manager.ChangeAnimationState(AnimationStates.Idle);
         }
     }
+
+
 }

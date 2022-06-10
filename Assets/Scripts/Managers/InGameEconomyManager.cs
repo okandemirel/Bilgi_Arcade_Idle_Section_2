@@ -15,7 +15,7 @@ namespace Assets.Scripts.Managers
 
         #region Private Variables
 
-        [ShowInInspector] private int _wood, _stone, _gold;
+        [ShowInInspector] public static int _wood, _stone, _gold;
 
         #endregion
 

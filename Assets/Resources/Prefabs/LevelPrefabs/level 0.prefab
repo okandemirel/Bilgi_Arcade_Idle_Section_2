@@ -1,5 +1,63 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &12168598632313328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7499056525542885012}
+  - component: {fileID: 8802259807014726957}
+  - component: {fileID: 3726509195462154659}
+  m_Layer: 0
+  m_Name: Buyable
+  m_TagString: Buyable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7499056525542885012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12168598632313328}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5283000662294887798}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!65 &8802259807014726957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12168598632313328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.630593, y: 1, z: 4.012598}
+  m_Center: {x: 0.2619754, y: 0, z: -0.10747195}
+--- !u!114 &3726509195462154659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12168598632313328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af945e3e2ef5cf49ac283ded8b0c8ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuyableData: {fileID: 11400000, guid: fc3a1405958d86140b542abf0b5eba84, type: 2}
 --- !u!1 &999641456889314327
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5001472639744951323}
   m_Layer: 0
-  m_Name: Cuttables
+  m_Name: Collectables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,8 +119,40 @@ Transform:
   - {fileID: 3543893861110703898}
   - {fileID: 2536502848216315091}
   - {fileID: 5001472639744951323}
+  - {fileID: 5283000662294887798}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2544671036175246160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5283000662294887798}
+  m_Layer: 0
+  m_Name: Buyables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5283000662294887798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544671036175246160}
+  m_LocalRotation: {x: -0, y: 0.3826837, z: -0, w: 0.9238795}
+  m_LocalPosition: {x: 54.09, y: 1.02, z: 86.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7499056525542885012}
+  m_Father: {fileID: 2536502847218672527}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2536502848017539069
 PrefabInstance:
@@ -133,10 +223,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5001472639744951323}
     m_Modifications:
-    - target: {fileID: 3497031921272322327, guid: b20f12f2472f5374596e25572b5bcfc6, type: 3}
-      propertyPath: type
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7027776174968339095, guid: b20f12f2472f5374596e25572b5bcfc6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -183,10 +269,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8349008749190445166, guid: b20f12f2472f5374596e25572b5bcfc6, type: 3}
       propertyPath: m_Name
-      value: Cuttable
+      value: Collectable
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2471950687296903839, guid: b20f12f2472f5374596e25572b5bcfc6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b20f12f2472f5374596e25572b5bcfc6, type: 3}
 --- !u!4 &6736695576980635179 stripped
 Transform:
@@ -200,9 +285,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2536502847218672527}
     m_Modifications:
+    - target: {fileID: 2570835058542567724, guid: f70462f8a3dd92148a3678c8915ce5a8, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7330045241074384272, guid: f70462f8a3dd92148a3678c8915ce5a8, type: 3}
       propertyPath: m_Name
       value: PlayerManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330045241074384274, guid: f70462f8a3dd92148a3678c8915ce5a8, type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 7330045241074384287, guid: f70462f8a3dd92148a3678c8915ce5a8, type: 3}
       propertyPath: m_RootOrder
